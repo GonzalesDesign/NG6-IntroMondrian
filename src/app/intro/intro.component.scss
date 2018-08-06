@@ -1,0 +1,181 @@
+
+
+
+/******************************************************
+* Project: R.Lloyd Gonzales Portfolio Website
+* URL: RLGonzales.com
+* Contact: rolandolloyd@gmail.com
+* Copyright © 2018 GonzalesDesign
+* Platform: Angular 6
+* Component: Intro Mondrian SCSS
+* Note: Component scoped styling.
+        There are 2 main theme colors, primary and
+        secondary and shades of them.
+        Additionally, greys of different values
+        can be used as backup colors.
+******************************************************/
+
+/*--- Import: Project's Theme Styling ---*/
+@import "./../../theme.scss";
+
+#rlg-main-kontainer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        // width: 100%;
+        height: 100vh;
+        // display: flex;
+        // flex-direction: column;
+        // align-content: center; // align vertically
+        // justify-content: center; // align horizontally
+        border: 1px solid rgb(26, 60, 250);
+
+        #rlg-kontainer {
+            // display: flex;
+            // flex-direction: row;
+            // align-content: center; // align vertically
+            // justify-content: center; // align horizontally
+            border: 0px solid rgb(84, 46, 46);
+
+            #title-kontainer {
+                z-index: 101;
+                opacity: 0.25;
+                // font-family: "OpenSans";
+                font-family: "Oswald";
+                margin: 0;
+
+                .title, .sub-title {
+                    // text-shadow: $text-dark-shadow;
+                    text-shadow: $text-light-shadow;
+                }
+                .title {
+                    // font-family: "Roboto";
+                    // font-family: "OpenSans";
+                    // font-family: "Oswald";
+                    // font-size: 1.8em;
+                    // letter-spacing: 1px;
+                    width: 400px;
+                    margin-bottom: -6px;
+                    // color: rgba(1, 77, 75, 0.95);
+                    // border: 1px solid rgba(200, 10, 100, .5);
+                }
+                .sub-title {
+                    font-size: .8em;
+                    width: 400px;
+                    // color: rgba(139, 149, 155, 0.85);
+                    // border: 1px solid rgba(200, 10, 100, .5);
+                }
+            }
+
+            .card-kontainer {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                // left: 0;
+                // width: 450px;
+                // height: 100%;
+                // opacity: 0;
+                padding: 8px;
+                background-color: white;
+                // overflow: hidden;
+                box-shadow: 0 4px 2px -2px rgba(0,0,0,.35);
+                margin-bottom: 25px;
+                border: 0px solid rgba(36, 174, 249, 0.95);
+            // }
+
+                .card-image {
+                    overflow: hidden;
+                    // height: 200px;
+                    // width: 350px;
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+                    -moz-backface-visibility:    hidden;
+                    -ms-backface-visibility:     hidden;
+                    border: 0px solid rgba(36, 174, 249, 0.95);
+                }
+
+
+            /* #image00 {
+                width: 450px;
+                height: 250px;
+                background-image: url('../../assets/Landscapes/landscape17.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 70%;
+            }
+            #image01 {
+                height: 250px;
+                background-image: url('../../assets/Landscapes/landscape18.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 70%;
+            }
+            #image02 {
+                width: 450px;
+                height: 250px;
+                background-image: url('../../assets/Landscapes/landscape19.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 70%;
+            }
+
+            .image100 {
+                background-size: 200%;
+            } */
+
+                .card-info-kontainer {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    border: 0px solid $mdc-theme-primary;
+
+                    .rlg-card__title {
+                        font-family: "Oswald";
+                        font-size: 1.4em;
+                        text-shadow: $text-dark-shadow;
+                    }
+                    .rlg-card__subtitle {
+                        font-size: .9em;
+                        margin-bottom: .5em;
+                    }
+                    .rlg-card-body {
+                        font-size: .8em;
+                    }
+                }
+
+                .rlg-button-kontainer {  // background rectangle container
+                    display: flex;
+                    // align-content: center; //vertical alignment
+                    align-items: center; //content vertical alignment
+                    justify-content: center;
+                    position: relative;
+                    // background-color: rgba(10, 10, 10, 0.947);
+                    // border: 1px solid yellowgreen;
+                    height: 50px;
+
+                    .rlg-button {
+                        // align-self: end;
+                        // display: flex;
+                        // align-content: center; //vertical alignment
+                        // align-items: center;
+                        justify-content: center; //horizontal alignment
+                        // font-size: 16px;
+                        // padding: .25em;
+                        text-shadow: $text-dark-shadow;
+                        top: -10px;
+                        // width: 50%;
+                        // height: 12%;
+                        position: relative;
+                        overflow: hidden;
+                        // padding: 10px;
+                        // text-align: center;
+                        border: 0px solid yellowgreen;
+                        // border-radius: 0px 0px 10px 10px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+        }
+
+    }

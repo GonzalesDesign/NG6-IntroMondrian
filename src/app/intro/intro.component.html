@@ -1,0 +1,37 @@
+
+
+
+<!-- /**********************************************************
+* Project: R.Lloyd Gonzales Portfolio Website
+* URL: RLGonzales.com
+* Contact: rolandolloyd@gmail.com
+* Copyright © 2018 GonzalesDesign
+* Platform: Angular 6
+* Component: Intro Mondrian Component View Template
+* Note: Index intro
+***********************************************************/ -->
+
+<!-- Loader component -->
+<app-loader-svg></app-loader-svg>
+
+<div id="rlg-main-kontainer">
+    <div id="rlg-kontainer">
+
+        <div *ngFor="let photo of photos; let i = index"
+                id="{{ photo.kontainerId }}"
+                class="photo-kontainer"
+
+                [style.backgroundImage]="'url('+ photo.imageUrl +')'"
+                [style.background-repeat]="'no-repeat'"
+                [style.backgroundPositionX.%]="50"
+                [style.backgroundPositionY.%]="0"
+                [style.width.px]="200"
+                [style.height.px]="200"
+                [style.backgroundSize]="'cover'"
+                >
+                <!-- [style.width.px]="0"
+                [style.height.px]="0"
+                [style.opacity]=".1" -->
+
+    </div>
+</div>
