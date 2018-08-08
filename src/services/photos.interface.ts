@@ -4,8 +4,8 @@ export interface PhotosInterface {
         kontainerClass: string;
         imageId: string;
         imageUrl: string;
-        cardTitle: string;
-        cardSubtitle: string;
-        cardDescription: string;
-        buttonId: string;
+        photoTitle: string;
+        photoSubtitle: string;
+        photoDescription: string;
+        buttonLabel: string;
     }

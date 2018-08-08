@@ -1,0 +1,51 @@
+
+From intro-component.html
+
+<div *ngFor="let photo of photos; let i = index"
+                id="{{ photo.kontainerId }}"
+                class="photo-kontainer"
+
+                [style.backgroundImage]="'url('+ photo.imageUrl +')'"
+                [style.background-repeat]="'no-repeat'"
+                [style.backgroundPositionX.%]="50"
+                [style.backgroundPositionY.%]="0"
+                [style.width.px]="200"
+                [style.height.px]="200"
+                [style.backgroundSize]="'cover'"
+                >
+                <!-- [style.width.px]="0"
+                [style.height.px]="0"
+                [style.opacity]=".1" -->
+        </div>
+    </div>
+
+    <ul id="rlg-image-kontainer-id" class="rlg-image-kontainer">
+      <!-- [style.width.px]= "imgKontainerWidth"> || fElementWidth(...) -->
+      <!-- <li class="image" *ngFor="let photo of photos | async; let i = index"> -->
+      <li class="image" *ngFor="let photo of photos; let i = index">
+        <div class="image-name-kontainer"
+          [style.width.px]='fotoWidth'>
+          <span class="image-name
+                       rlg-header-font
+                       rlg-typography-caps
+                       rlg-font-white-shadow
+                       rlg-secondary-mid-color">{{photo.imageName}}</span>
+        </div>
+        <div id=foto{{i}} class="foto"
+          [style.backgroundImage]="'url('+ photo.imageUrl +')'"
+          [style.background-repeat]="'no-repeat'"
+          [style.backgroundPositionX.%]="50"
+          [style.backgroundPositionY.%]="0"
+          [style.width.px]='fotoWidth'
+          [style.height.vh]='fotoHeight'
+          [style.backgroundSize]="'cover'">
+          <!--
+          [style.height.vh]="90"
+          [style.height.vh]="70"
+          [style.width.%]="100"
+          [style.width.px]="500"
+          [style.height.px]="500"
+          -->
+        </div>
+      </li>
+    </ul>

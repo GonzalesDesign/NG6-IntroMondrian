@@ -41,6 +41,8 @@ $secondaryColor: $rlgColorSecondary;
 $warningColor: $material-color-red-600;
 $backgroundColor: $material-color-blue-50;
 
+$mdc-theme-primary: $rlgColorPrimary;
+
 $text-dark-shadow: 1px 1px $rlgColorDark; // $material-color-grey-800;
 $text-mid-shadow: 1px 1px rgba($rlgColorDark, .5);
 $text-light-shadow: 1px 1px rgba($rlgColorDark, .25);
@@ -62,3 +64,5 @@ body {
     margin: 0;
     background-color: $rlgColorDark;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }

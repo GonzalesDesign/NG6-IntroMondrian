@@ -69,6 +69,51 @@ $rlg-kontainer-margin: 0px; // 28px;
 }
 
 /*-- Background color for the arrow button's circular bg --*/
-.mdc-icon-button::before, .mdc-icon-button::after {
+/* .mdc-icon-button::before, .mdc-icon-button::after {
     background-color: $rlgColorSecondary;
+} */
+
+$rlg-button-ink: $mdc-theme-primary;
+.mdc-button {
+    @include mdc-button-base_;
+    @include mdc-button-corner-radius(2px 2px 2px 2px);
+    // @include mdc-button-container-fill-color(rgba(8, 236, 252, 0.85));
+    @include mdc-button-container-fill-color($rlgColorSecondary);
+    @include mdc-button-ink-color($rlg-button-ink);
+    @include mdc-states($mdc-theme-secondary);
+    @include mdc-button--raised_;
+    // text-shadow: $text-dark-shadow;
+    /* display: flex;
+    align-content: center; // align vertically
+    justify-content: center; // align horizontally
+    position: relative;
+    width: 80%; */
+
+    // @include mdc-theme-prop(color, text-primary-on-dark);
+
+    // The icon CSS class overrides styles defined in the .material-icons CSS
+    // class, which is loaded separately so the order of CSS definitions is not
+    // guaranteed. Therefore, increase specifity by nesting this class to ensure
+    // overrides apply.
+    .mdc-button__icon {
+        @include mdc-button__icon_;
+    }
+    .mdc-icon {
+        color: beige;
+    }
+
+    // .demo-ink-color2 {
+    //     @include mdc-button-icon-color(rgba(3, 204, 254, .75));
+    //     @include mdc-button-ink-color(rgb(3, 204, 254));
+    //     @include mdc-states(rgb(3, 204, 254));
+    //     // border-radius: 20px;
+    //     // min-width: 80%;
+    //     // width: 80%;
+    //     display: inline-flex;
+    //     align-content: center;
+    //     justify-content: center;
+    //     // margin: 5px;
+    //     // width: 100%;
+    //     // height: 100px;
+    //   }
 }

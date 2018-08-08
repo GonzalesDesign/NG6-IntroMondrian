@@ -1,0 +1,14 @@
+
+From photos.json. The ff key: values, are for both the photo container and
+        the photo
+{
+        "id": 0,
+        "kontainerId":  "photo-kontainer-0",
+        "kontainerClass":  "photo-kontainer",
+        "imageId":  "image0",
+        "imageUrl":  "../../assets/Photos/photo0.jpg",
+        "photoTitle":  "Zero: El Nido, Palawan",
+        "photoSubtitle":  "by: Odee & John",
+        "photoDescription":  "El Nido is a Philippine municipality on Palawan island. It’s known for white-sand beaches, coral reefs and as the gateway to the Bacuit archipelago, a group of islands with steep karst cliffs. Miniloc Island is famed for the clear waters of its Small and Big lagoons. Nearby Shimizu Island has fish-filled waters. The area has many dive sites, including Dilumacad Island’s long tunnel leading to an underwater cavern.",
+        "buttonLabel":  "Filipinas"
+}

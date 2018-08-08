@@ -18,6 +18,15 @@
 /*--- Import: Project's Theme Styling ---*/
 @import "./../../theme.scss";
 
+.centerLine {
+        display: flex;
+        align-self: center;
+        margin: auto;
+        width: 1px;
+        height: 100px;
+        border: 1px solid salmon;
+    }
+
 #rlg-main-kontainer {
         display: flex;
         justify-content: center;
@@ -35,7 +44,7 @@
             // flex-direction: row;
             // align-content: center; // align vertically
             // justify-content: center; // align horizontally
-            border: 0px solid rgb(84, 46, 46);
+            border: 1px solid rgb(144, 250, 5);
 
             #title-kontainer {
                 z-index: 101;
@@ -67,7 +76,7 @@
                 }
             }
 
-            .card-kontainer {
+            .photo-kontainer {
                 display: flex;
                 flex-direction: column;
                 position: absolute;
@@ -80,10 +89,10 @@
                 // overflow: hidden;
                 box-shadow: 0 4px 2px -2px rgba(0,0,0,.35);
                 margin-bottom: 25px;
-                border: 0px solid rgba(36, 174, 249, 0.95);
+                border: 1px solid rgba(36, 174, 249, 0.95);
             // }
 
-                .card-image {
+                .photo-image {
                     overflow: hidden;
                     // height: 200px;
                     // width: 350px;
@@ -123,22 +132,22 @@
                 background-size: 200%;
             } */
 
-                .card-info-kontainer {
+                .photo-info-kontainer {
                     display: flex;
                     flex-direction: column;
                     padding: 1rem;
                     border: 0px solid $mdc-theme-primary;
 
-                    .rlg-card__title {
+                    .rlg-photo__title {
                         font-family: "Oswald";
                         font-size: 1.4em;
                         text-shadow: $text-dark-shadow;
                     }
-                    .rlg-card__subtitle {
+                    .rlg-photo__subtitle {
                         font-size: .9em;
                         margin-bottom: .5em;
                     }
-                    .rlg-card-body {
+                    .rlg-photo-body {
                         font-size: .8em;
                     }
                 }
