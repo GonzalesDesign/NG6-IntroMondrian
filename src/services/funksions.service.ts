@@ -56,6 +56,13 @@ import { TweenMax, TimelineMax, TweenLite, Power2, Power4, Elastic } from "gsap/
   } */
 
 
+  /*- For text alignment.
+      options: center, left, right, justify ----*/
+  fTextAlign(e, align) {
+    const x = document.querySelector(e), s = x.style;
+    s.textAlign = align;
+  }
+
   /*- For displaying an element.
       options: none, inline, block or inline-block ----*/
   fDisplay(e, disp) {
@@ -78,6 +85,12 @@ import { TweenMax, TimelineMax, TweenLite, Power2, Power4, Elastic } from "gsap/
     //   x.parentNode.removeChild(x);
     // })(document.getElementById(id)
 }
+
+/* public fSetTimeout(funct, tym) {
+  setTimeout(() => {
+    funct: any;
+  }, tym * 1000 );
+} */
 
   /*- Setting an element visibility.
       options: visible, hidden ----*/
@@ -109,8 +122,8 @@ import { TweenMax, TimelineMax, TweenLite, Power2, Power4, Elastic } from "gsap/
   /*- Setting height of an element. ----*/
   fElementHeight(e, h) {
     const x = document.querySelector(e), s = x.style;
-    s.height = h;
-    // console.log('e | h : ', e, ' | ', h);
+    s.height = h; // + '%';
+    console.log('e | h : ', e, ' | ', h);
   }
 
   /*- Setting an element horizontal position. ----*/

@@ -1,19 +1,19 @@
-
+/******************************************************
+* Project: R.Lloyd Gonzales Portfolio Website
+* URL: RLGonzales.com
+* Contact: rolandolloyd@gmail.com
+* Copyright © 2018 GonzalesDesign
+* Platform: Angular 6
+* Component: Intro Mondrian Theme SCSS
+* Note: HTML Class Styling.
+        These are pre-dfined css classes
+        to be used directly on html.
+******************************************************/
 
 
 /*--- Import: General styling ---*/
 @import './styles.scss';
 
-
-$rlg-theme-secondary-200: $material-color-deep-orange-200;
-$rlg-theme-secondary-500: $material-color-deep-orange-500;
-
-$rlg-kontainer-margin: 0px; // 28px;
-
-/*----- Miscellaneous Styling -----*/
-// .rlg-component-label {
-//     margin: $rlg-kontainer-margin;
-// }
 .rlg-typography-caps {
     text-transform: uppercase;
 }
@@ -68,10 +68,12 @@ $rlg-kontainer-margin: 0px; // 28px;
     text-shadow: $text-white-shadow;
 }
 
+
+
 /*-- Background color for the arrow button's circular bg --*/
 /* .mdc-icon-button::before, .mdc-icon-button::after {
     background-color: $rlgColorSecondary;
-} */
+    } */
 
 $rlg-button-ink: $mdc-theme-primary;
 .mdc-button {

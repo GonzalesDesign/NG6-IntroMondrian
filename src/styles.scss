@@ -52,8 +52,9 @@ $mdc-deep-orange: $material-color-deep-orange-500;
 
 $rlg-theme-light-grey: $material-color-grey-50;
 
-// :root = @angular-mdc/theme/material-components-web/theme/_variables.scss
 
+
+/*-- Font families ---*/
 $rlg-primary-font: "OpenSans";
 $rlg-header-font: "Oswald";
 $rlg-round-font: "Lato";
@@ -62,7 +63,7 @@ $rlg-bodycopy-color: $material-color-grey-600; // #747874;
 
 body {
     margin: 0;
-    background-color: $rlgColorDark;
+    background-color:  $rlgColorPrimary; // $rlgColorDark; // $rlgColorLight;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }

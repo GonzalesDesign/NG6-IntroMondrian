@@ -52,12 +52,12 @@ export class IntroAnimService {
     // .from(e2, 2, { y: -100, alpha: 0, ease: Elastic.easeOut, delay: 1 });
   }
 
-  public backgroundImageTransform(elem, tym, w, h, bgSize, hPos, vPos): any {
+  public backgroundImageTransform(elem, tym, h, scl, bgSize?: any, hPos?: any, vPos?: any): any {
       this.tMx
       .to(elem, tym, {
-        width: w,
+        width: '100%',
         height: h,
-        scale: 1,
+        scale: scl,
         backgroundSize: bgSize,
         backgroundPositionX: hPos,
         backgroundPositionY: vPos,

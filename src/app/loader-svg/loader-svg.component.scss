@@ -3,13 +3,16 @@
 /*--- Import: Project's Theme Styling ---*/
 @import "./../../theme.scss";
 
-$borderForTesting: 0px solid rgb(243, 42, 243);
+$borderForTesting: 1px solid rgb(243, 42, 243);
+
+$loaderColor: $rlgColorDark;
 
 .loading-kontainer {
         display: flex;
         justify-content: center;
         position: absolute;
         margin: auto;
+        top: 25vh;
         width: 100vw;
         height: 50vh;
         border: $borderForTesting;
@@ -21,12 +24,12 @@ $borderForTesting: 0px solid rgb(243, 42, 243);
                 height: 50%;
                 overflow: visible;
 
-                .st0 { stroke: rgba($rlgColorSecondary, 1); }
-                .st1 { stroke: rgba($rlgColorSecondary, .75); }
-                .st2 { stroke: rgba($rlgColorSecondary, 1); }
-                .st3 { stroke: rgba($rlgColorSecondary, .75); }
-                .st4 { stroke: rgba($rlgColorSecondary, .4); }
-                .st5 { stroke: rgba($rlgColorSecondary, .75); }
+                .st0 { stroke: rgba($loaderColor, 1); }
+                .st1 { stroke: rgba($loaderColor, .75); }
+                .st2 { stroke: rgba($loaderColor, 1); }
+                .st3 { stroke: rgba($loaderColor, .75); }
+                .st4 { stroke: rgba($loaderColor, .4); }
+                .st5 { stroke: rgba($loaderColor, .75); }
           }
 
         .loading {
@@ -34,7 +37,7 @@ $borderForTesting: 0px solid rgb(243, 42, 243);
           position: absolute;
           font-size: 1em;
           text-align: center;
-          color: $rlgColorSecondary;
+          color: $loaderColor;
           border: $borderForTesting;
 
         }
