@@ -184,16 +184,16 @@ export class IntroComponent implements OnInit, AfterViewInit {
     // this._introAnim.backgroundImageTransform2(this.foto[7],  tym2,      'cover',          '0%',       '0%');
     // this._introAnim.backgroundImageTransform2(this.foto[8],  tym2,      'cover',          '0%',       '0%');
 
-    /* this._introAnim.backgroundImageTransform(     elem,    tym,              w,                   h,      bgSize,          hPos,      vPos):---*/
-    this._introAnim.backgroundImageTransform(this.foto[0],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',         '20%',     '10%');
-    this._introAnim.backgroundImageTransform(this.foto[1],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',         '50%',      '20%');
-    this._introAnim.backgroundImageTransform(this.foto[2],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
-    this._introAnim.backgroundImageTransform(this.foto[3],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',         '90%',       '5%');
-    this._introAnim.backgroundImageTransform(this.foto[4],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',         '20%',      '10%');
-    this._introAnim.backgroundImageTransform(this.foto[5],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
-    this._introAnim.backgroundImageTransform(this.foto[6],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
-    this._introAnim.backgroundImageTransform(this.foto[7],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
-    this._introAnim.backgroundImageTransform(this.foto[8],   tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
+    /* this._introAnim.backgroundImageTransform(     elem,         tym,              w,                   h,      bgSize,          hPos,      vPos):---*/
+    this._introAnim.backgroundImageTransform(this.foto[0],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',         '20%',     '10%');
+    this._introAnim.backgroundImageTransform(this.foto[1],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',         '50%',      '20%');
+    this._introAnim.backgroundImageTransform(this.foto[2],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
+    this._introAnim.backgroundImageTransform(this.foto[3],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',         '90%',       '5%');
+    this._introAnim.backgroundImageTransform(this.foto[4],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',         '20%',      '10%');
+    this._introAnim.backgroundImageTransform(this.foto[5],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
+    this._introAnim.backgroundImageTransform(this.foto[6],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
+    this._introAnim.backgroundImageTransform(this.foto[7],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
+    this._introAnim.backgroundImageTransform(this.foto[8],   this.tym2,      fotoWidth,    fotoHeight + '%',     'cover',          '0%',       '0%');
 
   }
 
