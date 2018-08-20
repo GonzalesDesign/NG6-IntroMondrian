@@ -1,0 +1,79 @@
+<!-- <div class="mdc-card">
+  <div class="mdc-card__media mdc-card__media--square">
+    <div class="mdc-card__media-content">Title</div>
+  </div>
+
+  <div class="mdc-card__actions">
+    <div class="mdc-card__action-buttons">
+      <button class="mdc-button mdc-card__action mdc-card__action--button">Action 1</button>
+      <button class="mdc-button mdc-card__action mdc-card__action--button">Action 2</button>
+    </div>
+    <div class="mdc-card__action-icons">
+      <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
+      <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options">more_vert</button>
+    </div>
+  </div>
+</div> -->
+
+<div>
+  <mdc-dialog>
+    <!-- <app-pop-dialog []></app-pop-dialog> -->
+    <!-- Say {{ message }} <br>
+    Image to load: {{imageToLoad}} <br>
+    PosY: {{imageYpos}} <br>
+    Message: {{message}} <br>
+    Name: {{name}} -->
+    <!-- (listEvent)="message=$event" -->
+    <!-- <app-mdc-image-list (listEvent)="message=$event"></app-mdc-image-list> -->
+    <!-- <div class="mdc-cardo">Simple</div> -->
+    <mdc-dialog-header>
+      <mdc-dialog-header-title
+          class="rlg-pop-title
+                 rlg-primary-font
+                 rlg-primary-color
+                 rlg-font-shadow">
+                 {{imageName}}
+      </mdc-dialog-header-title>
+    </mdc-dialog-header>
+    <mdc-dialog-body [scrollable]="true">
+      <!-- <img src="{{imageToLoad}}"> -->
+      <!-- <div class="imgTestX">{{imageToLoad}}</div> -->
+      <!-- <div [scrollable]="true"> -->
+        <div id="imgCard" class="imageCard"
+              [style.backgroundImage]="'url(' + imageToLoad + ')'"
+              [style.width.%]="100" [style.height.vh]="50"
+              [style.backgroundColor]="red"
+              [style.background-repeat]="'no-repeat'"
+              [style.backgroundPositionX.%]="0"
+              [style.backgroundPositionY.%]=i mageYpos
+              [style.backgroundSize]="'cover'">
+        </div>
+        <!-- [style.backgroundImage]="'url('+ card.imageUrl +')'" -->
+      <!-- </div> -->
+      <div id="pop-image-description">
+        <!-- {{description}} -->
+        {{popDescription}}
+      </div>
+
+    </mdc-dialog-body>
+    <!-- <mdc-dialog-body [scrollable]="true">
+      <mdc-list>
+        <mdc-list-item>None</mdc-list-item>
+        <mdc-list-item>Callisto</mdc-list-item>
+        <mdc-list-item>Ganymede</mdc-list-item>
+        <mdc-list-item>Luna</mdc-list-item>
+        <mdc-list-item>Marimba</mdc-list-item>
+        <mdc-list-item>Schwifty</mdc-list-item>
+        <mdc-list-item>Callisto</mdc-list-item>
+        <mdc-list-item>Ganymede</mdc-list-item>
+        <mdc-list-item>Luna</mdc-list-item>
+        <mdc-list-item>Marimba</mdc-list-item>
+        <mdc-list-item>Schwifty</mdc-list-item>
+      </mdc-list>
+    </mdc-dialog-body> -->
+    <mdc-dialog-footer>
+      <button mdc-dialog-button [cancel]="true">Decline</button>
+      <button mdc-dialog-button [accept]="true">Accept</button>
+    </mdc-dialog-footer>
+  </mdc-dialog>
+</div>

@@ -1,0 +1,61 @@
+
+
+/*----- Component Theme styling -----*/
+@import './../../../theme.scss';
+
+.myTestCard {
+  height: 350px;
+  width: 350px;
+  background-color: grey;
+  top: 0px;
+  z-index: 1000;
+}
+
+.my-card {
+    height: 350px;
+    width: 350px;
+  }
+
+
+  /* .my-card__media {
+    background-image: url("./../../../assets/photos/photo4.jpg");
+  } */
+  /* .demo-card__media {
+    height: 550px;
+    width: 650px;
+    background-image: url("./../../../assets/photos/photo3.jpg");
+  } */
+
+  /* .mdc-dialog__body--scrollable {
+    max-height: 70vh;
+  } */
+
+  /* .mdc-dialog__surface  {
+      min-width: 80%;
+      max-width: 90%;
+  } */
+
+  /* .mdc-cardo {
+    height: 350px;
+    width: 350px;
+    background-image: url("./../../../assets/Photos/photo10.jpg");
+  } */
+
+  /* .imgTest {
+    height: 350px;
+    width: 100%;
+    background-image: url("./../../../assets/Photos/photo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 10%;
+  } */
+
+  .rlg-pop-title {
+    // font-family: $rlg-primary-font;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  #pop-image-description {
+    margin-top: 1em;
+  }

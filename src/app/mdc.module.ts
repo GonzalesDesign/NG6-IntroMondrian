@@ -1,31 +1,59 @@
 import { NgModule } from '@angular/core';
 import {
   MdcButtonModule,
-  MdcIconModule,
   MdcCardModule,
-  MdcIconToggleModule,
-  MdcRippleModule,
-  MdcTextFieldModule,
-  MdcListModule,
-  MdcThemeModule,
-  MdcTypographyModule,
+  MdcCheckboxModule,
+  MdcDialogModule,
+  MdcDrawerModule,
+  MdcElevationModule,
   MdcFabModule,
-  MdcMenuModule
+  MdcFormFieldModule,
+  MdcIconModule,
+  MdcIconButtonModule,
+  MdcIconToggleModule,
+  MdcLinearProgressModule,
+  MdcListModule,
+  MdcMenuModule,
+  MdcRadioModule,
+  MdcRippleModule,
+  MdcSelectModule,
+  MdcSliderModule,
+  MdcSnackbarModule,
+  MdcSwitchModule,
+  MdcTabModule,
+  MdcTextFieldModule,
+  MdcThemeModule,
+  MdcToolbarModule,
+  MdcTypographyModule
 } from '@angular-mdc/web';
 
 @NgModule({
   exports: [
-    MdcCardModule,
     MdcButtonModule,
-    MdcIconModule,
-    MdcIconToggleModule,
-    MdcRippleModule,
-    MdcTextFieldModule,
-    MdcListModule,
-    MdcThemeModule,
-    MdcTypographyModule,
+    MdcCardModule,
+    MdcCheckboxModule,
+    MdcDialogModule,
+    MdcDrawerModule,
+    MdcElevationModule,
     MdcFabModule,
-    MdcMenuModule
+    MdcFormFieldModule,
+    MdcIconModule,
+    MdcIconButtonModule,
+    MdcIconToggleModule,
+    MdcLinearProgressModule,
+    MdcListModule,
+    MdcMenuModule,
+    MdcRadioModule,
+    MdcRippleModule,
+    MdcSelectModule,
+    MdcSliderModule,
+    MdcSnackbarModule,
+    MdcSwitchModule,
+    MdcTabModule,
+    MdcTextFieldModule,
+    MdcThemeModule,
+    MdcToolbarModule,
+    MdcTypographyModule
   ]
 })
-export class AppMaterialModule { }
+export class MdcModule { }

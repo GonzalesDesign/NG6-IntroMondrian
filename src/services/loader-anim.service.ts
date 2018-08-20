@@ -9,14 +9,13 @@
 * Copyright © 2018 GonzalesDesign
 * Platform: Angular 6
 * Service Name: LoaderAnimService
-* Note: Service for carousel3.component.ts
-        to run loader-svg.component.ts
+* Note: Service for loader-svg.component.ts
+        to run on intro.component.ts
 ************************************************/
 
 
 import { Injectable } from '@angular/core';
-import { FunksionsService } from './funksions.service';
-import { TweenMax, TimelineMax, Power2, Power4, Elastic } from "gsap/TweenMax";
+import { TweenMax, Power2, Elastic } from "gsap/TweenMax";
 
 @Injectable({
   providedIn: 'root'
@@ -26,15 +25,15 @@ export class LoaderAnimService {
   public tMx = TweenMax;
 
   // public circle: HTMLElement;
-  public archSVG = '#svgArch-id';
-  public circ2 = '#circ2';
-  public circ4 = '#circ4';
-  public circ5 = '#circ5';
-  public circ6 = '#circ6';
-  public circ7 = '#circ7';
-  public circ8 = '#circ8';
+  public archSVG  =  '#svgArch-id';
+  public circ2    =  '#circ2';
+  public circ4    =  '#circ4';
+  public circ5    =  '#circ5';
+  public circ6    =  '#circ6';
+  public circ7    =  '#circ7';
+  public circ8    =  '#circ8';
 
-  constructor(private _funksions: FunksionsService) { }
+  constructor() { }
 
   /* fCreateCircle(parentEl) {
     const e = document.createElement('div');
@@ -82,7 +81,7 @@ export class LoaderAnimService {
       ease: Elastic.easeInOut});
 
     // dash
-    this.tMx.to(this.circ6, 4, {scale: 1, rotation: 360, transformOrigin: '50% 50%',
+    this.tMx.to(this.circ6, 6, {scale: 1, rotation: 360, transformOrigin: '50% 50%',
       // delay: .25,
       repeat: -1,
       // repeatDelay: 1,

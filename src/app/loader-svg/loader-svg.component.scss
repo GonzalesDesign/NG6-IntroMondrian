@@ -3,9 +3,9 @@
 /*--- Import: Project's Theme Styling ---*/
 @import "./../../theme.scss";
 
-$borderForTesting: 1px solid rgb(243, 42, 243);
+$borderForTesting: 0px solid rgb(243, 42, 243);
 
-$loaderColor: $rlgColorDark;
+$loaderColor: $rlgColorGreyDark;
 
 .loading-kontainer {
         display: flex;
@@ -24,18 +24,18 @@ $loaderColor: $rlgColorDark;
                 height: 50%;
                 overflow: visible;
 
-                .st0 { stroke: rgba($loaderColor, 1); }
-                .st1 { stroke: rgba($loaderColor, .75); }
+                .st0 { stroke: rgba($rlgColorGreyMid, 1); } // thin rings
+                .st1 { stroke: rgba($loaderColor, .75); } // big dash rlgColorTertiary
                 .st2 { stroke: rgba($loaderColor, 1); }
                 .st3 { stroke: rgba($loaderColor, .75); }
-                .st4 { stroke: rgba($loaderColor, .4); }
+                .st4 { stroke: rgba($loaderColor, 1); } // small dash
                 .st5 { stroke: rgba($loaderColor, .75); }
           }
 
         .loading {
           align-self: center;
           position: absolute;
-          font-size: 1em;
+          font-size: 1.2em;
           text-align: center;
           color: $loaderColor;
           border: $borderForTesting;

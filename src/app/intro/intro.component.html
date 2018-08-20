@@ -43,27 +43,35 @@
           >
           <!-- [style.border]="'1px solid red'" -->
 
-        <!-- photos -->
-        <div id="{{ photo.imageId }}" class="foto"
-          [style.backgroundImage]="'url('+ photo.imageUrl +')'"
-          [style.background-repeat]= "'no-repeat'"
-          >
-          <!-- [style.backgroundPositionX]="-100"
-          [style.width.%]="100"
-          [style.height.%]="100"
-            [style.display]= "'flex'"
-          [style.flex-direction]= "'column'"
-                [style.width.px]="400"
-                [style.height.px]="300"
-                [style.left.px]="0"
-                [style.opacity]=".5"
-                [style.height.px]="500"
-                [style.border]="'1px solid red'"
-          [style.backgroundPositionX.%]="50"
-          [style.backgroundSize]= "'cover'"
-          [style.border]="'1px solid grey'"
-          -->
+          <!-- photos -->
+          <div id="{{ photo.imageId }}" class="foto"
+            [style.backgroundImage]="'url('+ photo.imageUrl +')'"
+            [style.background-repeat]= "'no-repeat'"
+            >
+            <!-- [style.backgroundPositionX]="-100"
+            [style.width.%]="100"
+            [style.height.%]="100"
+              [style.display]= "'flex'"
+            [style.flex-direction]= "'column'"
+                  [style.width.px]="400"
+                  [style.height.px]="300"
+                  [style.left.px]="0"
+                  [style.opacity]=".5"
+                  [style.height.px]="500"
+                  [style.border]="'1px solid red'"
+            [style.backgroundPositionX.%]="50"
+            [style.backgroundSize]= "'cover'"
+            [style.border]="'1px solid grey'"
+            -->
           </div>
+
+          <!-- Testing the secondary images from json -->
+          <!-- <div *ngFor="let popPhoto of popUpImages; let i = index"
+                [style.backgroundImage]="'url('+ popPhoto +')'"
+                [style.background-repeat]= "'no-repeat'"
+                [style.height.px]="100"
+                >
+          </div> -->
 
           <!-- Show on small screen -->
           <div class="photo-info-kontainer">
@@ -75,12 +83,21 @@
                 {{ photo.photoDescription }}
             </div>
           </div>
+
           <!-- End Show -->
           <!-- [style.font-size.px]="isImportant ? '30' : '16'" -->
           <!-- <div [style.display]="isSmallScreen ? 'visible' : 'none'"> -->
 
           <div class="rlg-button-kontainer">
-            <button mdc-button [unelevated]="true" [icon]="true" class="rlg-button rlg-ink-color2" (click)="unfurlingModal()">
+            <button mdc-button [unelevated]="true"
+                    [icon]="true" class="rlg-button rlg-ink-color2"
+                    (click)="fOpenModal(photo.images[i])">
+                    <!--
+                      (click)="openSimple(photo.images[i], photo.photoTitle)"
+                      (click)="fOpenModal(photo.images[i])"
+                      (click)="fOpenModal(photo.imageUrl)"
+                    [style.zIndex]=2000
+                    > -->
               <mdc-icon>loupe</mdc-icon>
               {{ photo.buttonLabel }}
             </button>

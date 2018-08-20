@@ -71,6 +71,18 @@ import { TweenMax, TimelineMax, TweenLite, Power2, Power4, Elastic } from "gsap/
     const x = document.querySelector(e), s = x.style;
     s.display = disp;
   }
+
+  fDisplayAll(e, disp) {
+    const elems = document.querySelectorAll(e); // as HTMLCollectionOf<HTMLElement>;
+    for (let i = 0; i < elems.length; i++) {
+        elems[i].style.display = disp;
+        // elems[i].style.opacity = 0;
+        // this.fTMxToAlfa(elems[i], 5, 1, Power2.easeOut);
+        // this.fTMxFrAlpha(elems[i], 1, alfa, Power2.easeOut);
+    }
+    // this.fTMxFrAlpha(elems, 1, alfa, Power2.easeOut);
+  }
+
   fRemoveLoader(e, disp, tym) {
     const x = document.querySelector(e); // , s = x.style;
     if (disp === 'none') {
@@ -123,7 +135,7 @@ import { TweenMax, TimelineMax, TweenLite, Power2, Power4, Elastic } from "gsap/
   fElementHeight(e, h) {
     const x = document.querySelector(e), s = x.style;
     s.height = h; // + '%';
-    console.log('e | h : ', e, ' | ', h);
+    // console.log('e | h : ', e, ' | ', h);
   }
 
   /*- Setting an element horizontal position. ----*/

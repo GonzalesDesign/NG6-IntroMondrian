@@ -7,11 +7,10 @@
 @import "~@angular-mdc/theme/material";
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-// @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700");
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin-ext');
-// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic&amp;subset=latin-ext');
 @import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
 
 /*---- Material Design Component: MDC ----*/
 /* $mdc-theme-primary: $material-color-deep-orange-500 !default; // $material-color-red-800; //  rgb(194, 7, 135);
@@ -35,6 +34,9 @@ $rlgColorTertiaryMid: rgb(243, 137, 127);
 $rlgColorDark: #092834;
 $rlgColorDarkMid: #45798b;
 $rlgColorLight: #F0F7D4;
+$rlgColorGreyDark:  rgb(78, 83, 85);
+$rlgColorGreyMid:  rgb(117, 127, 131);
+$rlgColorGreyLight:  rgb(176, 180, 182);
 
 $primaryColor: $rlgColorPrimary;
 $secondaryColor: $rlgColorSecondary;
@@ -58,6 +60,10 @@ $rlg-theme-light-grey: $material-color-grey-50;
 $rlg-primary-font: "OpenSans";
 $rlg-header-font: "Oswald";
 $rlg-round-font: "Lato";
+$rlg-open-font: "Open Sans";
+$rlg-pt-font: "PT Sans";
+$rlg-pt-caption-font: "PT Sans Caption";
+
 
 $rlg-bodycopy-color: $material-color-grey-600; // #747874;
 

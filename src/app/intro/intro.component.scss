@@ -29,6 +29,10 @@
     border: 1px solid salmon;
 }
 
+// .popUpDialog {
+//     z-index: 99000 !important;
+// }
+
 $dev-border: 0px solid rgb(255, 0, 255);
 
 /*--- Site classes ---*/
@@ -124,8 +128,8 @@ $dev-border: 0px solid rgb(255, 0, 255);
                     // background-color: $rlgColorTertiary;
 
                     .rlg-photo-title {
-                        font-family: $rlg-round-font;
-                        font-weight: 700;
+                        font-family: $rlg-pt-caption-font;
+                        font-weight: 400;
                         font-size: 1.4em;
                         margin: 0;
                         color: $rlgColorSecondary;
@@ -133,14 +137,27 @@ $dev-border: 0px solid rgb(255, 0, 255);
                         // text-shadow: $text-dark-shadow;
                     }
                     .rlg-photo-subtitle {
-                        font-size: 1em;
+                        font-family: $rlg-pt-font;
+                        // font-weight: 400;
+                        // font-size: 1em;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.44444;
                         margin-top: 0;
                         margin-bottom: .5em;
                         color: $rlgColorTertiary;
                         border: $dev-border;
                     }
                     .rlg-photo-body {
-                        font-size: 1em;
+                        font-family: $rlg-pt-font;
+                        // font-weight: 400;
+                        // font-size: 1em;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.44444;
+                        // font-size: 1em;
                         color: rgba($rlgColorDark, .5);
                         border: $dev-border;
                     }

@@ -1,13 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppMaterialModule } from './mdc.module';
+import { MdcModule } from './mdc.module';
+import { DialogModule } from './dialog.module';
+import { MatModule } from './mat.module';
 
-import { IntroComponent } from './intro/intro.component';
+import { IntroComponent, DialogSimpleExample } from './intro/intro.component';
+// import { PopDialogComponent } from './intro/pop-dialog/pop-dialog.component';
 import { LoaderSvgComponent } from './loader-svg/loader-svg.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -15,16 +18,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     IntroComponent,
+    // PopDialogComponent,
+    DialogSimpleExample,
     LoaderSvgComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AppMaterialModule,
-    BrowserAnimationsModule
+    MdcModule,
+    DialogModule,
+    // BrowserAnimationsModule,
+    MatModule
+  ],
+  entryComponents: [
+    // PopDialogComponent
+    DialogSimpleExample
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
