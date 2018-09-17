@@ -12,12 +12,12 @@
 ****************************************************/
 
 /*--= Angular Core =----*/
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 /*--= Material: MDC =----*/
 import { MdcDialog, MdcDialogRef } from '@angular-mdc/web';
-import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+/*--= Project's Components|Services =----*/
 import { FunksionsService } from '../../services/funksions.service';
 import { IntroAnimService } from '../../services/intro-anim.service';
-/*--= Project's Components|Services =----*/
 import { IntroDataService } from '../../services/intro-data.service';
 import { PopDialogComponent } from './pop-dialog/pop-dialog.component';
 
@@ -38,8 +38,8 @@ export class IntroComponent implements OnInit, AfterViewInit {
   public fotoWidth = 500;
   public fotoHeight = 50;
     /*--= Secondary images =--*/
-  public popUpImgsPath: string;
-  public popUpImages = [];
+    public popUpImgsPath: string;
+    public popUpImages = [];
 
   /*-= Loading variables =----*/
   public loading = '.loading';
@@ -113,12 +113,14 @@ export class IntroComponent implements OnInit, AfterViewInit {
         // const popUpImgsLength =  data.images.length; // test
         // console.log('popUpImgsLength: ', popUpImgsLength);
 
+        // test
         for (let i = 0; i < 3; i++) {
           this.popUpImgsPath = data[0].imagePath;
           this.popUpImages.push(this.popUpImgsPath + data[i].images[i]);
           console.log('this.popUpImages: ', this.popUpImages);
         }
 
+        /*--= Populating arrays =--*/
         for (let i = 0; i < data.length; i++) {
           const element = data[i];
           // this.photoKontainer.push('#' + element.kontainerId);
@@ -135,6 +137,7 @@ export class IntroComponent implements OnInit, AfterViewInit {
 
       this._funksions.fDisplay(this.mainContainerId, 'none');
 
+      /*--= Triggering resizeMe on enter =--*/
       setTimeout(() => {
         this.resizeMe();
       }, 100);
@@ -333,6 +336,7 @@ export class IntroComponent implements OnInit, AfterViewInit {
 
   //   }
 
+  /* Modal test */
   fOpenModalX(img): void {
     const dialogRef = this._dialog.open(PopDialogComponent, {
       data: { img: img,
